@@ -5,10 +5,10 @@ import { AppComponent } from "./app.component";
 
 import { DataService } from "./data.service";
 
-import { enable as traceEnable, addCategories } from "tns-core-modules/trace";
-import { routerTraceCategory } from "nativescript-angular/trace";
+import { enable as traceEnable, addCategories, categories } from "tns-core-modules/trace";
+import { routerTraceCategory,  } from "nativescript-angular/trace";
 
-// addCategories(routerTraceCategory);
+addCategories(`${routerTraceCategory}, ${categories.NativeLifecycle}`);
 traceEnable();
 
 class MyErrorHandler implements ErrorHandler {

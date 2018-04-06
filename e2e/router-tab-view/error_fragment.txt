@@ -1,0 +1,28 @@
+Calling js method onTransitionEnd failed
+TypeError: Cannot read property 'delete' of undefined
+File: "file:///data/data/org.nativescript.routertabview/files/app/tns_modules/tns-core-modules/ui/frame/fragment.transitions.js, line: 552, column: 11
+StackTrace:
+    Frame: function:'transitionOrAnimationCompleted', file:'file:///data/data/org.nativescript.routertabview/files/app/tns_modules/tns-core-modules/ui/frame/fragment.transitions.js', line: 552, column: 12
+    Frame: function:'TransitionListenerImpl.onTransitionEnd', file:'file:///data/data/org.nativescript.routertabview/files/app/tns_modules/tns-core-modules/ui/frame/fragment.transitions.js', line: 219, column: 17
+
+
+Repo: Nav with long animation, task-manager before anim ends, resume app, nav back
+
+An uncaught Exception occurred on "main" thread.
+java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first.
+	at android.view.ViewGroup.addViewInner(ViewGroup.java:4454)
+	at android.view.ViewGroup.addView(ViewGroup.java:4295)
+	at android.view.ViewGroup.addView(ViewGroup.java:4235)
+	at android.view.ViewGroup.addView(ViewGroup.java:4208)
+	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1007)
+	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1171)
+	at android.app.BackStackRecord.run(BackStackRecord.java:815)
+	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1578)
+	at android.app.FragmentManagerImpl$1.run(FragmentManager.java:483)
+	at android.os.Handler.handleCallback(Handler.java:751)
+	at android.os.Handler.dispatchMessage(Handler.java:95)
+	at android.os.Looper.loop(Looper.java:154)
+	at android.app.ActivityThread.main(ActivityThread.java:6077)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
